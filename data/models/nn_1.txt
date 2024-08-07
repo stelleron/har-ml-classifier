@@ -1,0 +1,39 @@
+Epochs: 5
+Feature Selection: MRMR
+Feature Set: Top 30
+Model: NeuralNetwork(
+  (flatten): Flatten(start_dim=1, end_dim=-1)
+  (linear_relu_stack): Sequential(
+    (0): Linear(in_features=30, out_features=512, bias=True)
+    (1): ReLU()
+    (2): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Linear(in_features=512, out_features=128, bias=True)
+    (4): ReLU()
+    (5): Dropout(p=0.05, inplace=False)
+    (6): Linear(in_features=128, out_features=32, bias=True)
+    (7): SiLU()
+    (8): Linear(in_features=32, out_features=8, bias=True)
+    (9): Softmax(dim=None)
+  )
+)
+Loss Function: Cross Entropy Loss
+Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0001
+    maximize: False
+    weight_decay: 0
+)
+
+
+
+Results: Test Error: 
+ Accuracy: 78.0%, Avg loss: 1.396817 
+
+Timer: 30.01s
