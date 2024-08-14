@@ -283,5 +283,4 @@ gravityAcc_Sma
 gyro_Sma
 bodyAccJerk_Sma
 gyroJerk_Sma
-windowLength
 activity
