@@ -32,7 +32,7 @@ Parameter Group 0
     eps: 1e-08
     foreach: None
     fused: None
-    lr: 0.0005
+    lr: 0.001
     maximize: False
     weight_decay: 0
 )
@@ -40,6 +40,6 @@ Parameter Group 0
 
 
 Results: Test Error: 
- Accuracy: 90.5%, Avg loss: 1.716051 
+ Accuracy: 90.1%, Avg loss: 1.718113 
 
-Timer: 112.44s
+Timer: 221.39s
