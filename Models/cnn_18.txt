@@ -1,0 +1,45 @@
+Epochs: 100
+Feature Selection: MRMR
+Feature Set: ['bodyAccX_Mean', 'bodyAccX_Median', 'bodyAccX_Min', 'bodyAccX_Max', 'bodyAccX_Std', 'bodyAccX_Mad', 'bodyAccX_Range', 'bodyAccX_Iqr', 'bodyAccX_Rms', 'bodyAccX_Peak_count', 'bodyAccX_Energy', 'bodyAccX_Entropy', 'bodyAccX_Skewness', 'bodyAccX_Kurtosis', 'bodyAccY_Mean', 'bodyAccY_Median', 'bodyAccY_Min', 'bodyAccY_Max', 'bodyAccY_Std', 'bodyAccY_Mad', 'bodyAccY_Range', 'bodyAccY_Iqr', 'bodyAccY_Rms', 'bodyAccY_Peak_count', 'bodyAccY_Energy', 'bodyAccY_Entropy', 'bodyAccY_Skewness', 'bodyAccY_Kurtosis', 'bodyAccZ_Mean', 'bodyAccZ_Median', 'bodyAccZ_Min', 'bodyAccZ_Max', 'bodyAccZ_Std', 'bodyAccZ_Mad', 'bodyAccZ_Range', 'bodyAccZ_Iqr', 'bodyAccZ_Rms', 'bodyAccZ_Peak_count', 'bodyAccZ_Energy', 'bodyAccZ_Entropy', 'bodyAccZ_Skewness', 'bodyAccZ_Kurtosis', 'gravityAccX_Mean', 'gravityAccX_Median', 'gravityAccX_Min', 'gravityAccX_Max', 'gravityAccX_Std', 'gravityAccX_Mad', 'gravityAccX_Range', 'gravityAccX_Iqr', 'gravityAccX_Rms', 'gravityAccX_Peak_count', 'gravityAccX_Energy', 'gravityAccX_Entropy', 'gravityAccX_Skewness', 'gravityAccX_Kurtosis', 'gravityAccY_Mean', 'gravityAccY_Median', 'gravityAccY_Min', 'gravityAccY_Max', 'gravityAccY_Std', 'gravityAccY_Mad', 'gravityAccY_Range', 'gravityAccY_Iqr', 'gravityAccY_Rms', 'gravityAccY_Peak_count', 'gravityAccY_Energy', 'gravityAccY_Entropy', 'gravityAccY_Skewness', 'gravityAccY_Kurtosis', 'gravityAccZ_Mean', 'gravityAccZ_Median', 'gravityAccZ_Min', 'gravityAccZ_Max', 'gravityAccZ_Std', 'gravityAccZ_Mad', 'gravityAccZ_Range', 'gravityAccZ_Iqr', 'gravityAccZ_Rms', 'gravityAccZ_Peak_count', 'gravityAccZ_Energy', 'gravityAccZ_Entropy', 'gravityAccZ_Skewness', 'gravityAccZ_Kurtosis', 'gyroX_Mean', 'gyroX_Median', 'gyroX_Min', 'gyroX_Max', 'gyroX_Std', 'gyroX_Mad', 'gyroX_Range', 'gyroX_Iqr', 'gyroX_Rms', 'gyroX_Peak_count', 'gyroX_Energy', 'gyroX_Entropy', 'gyroX_Skewness', 'gyroX_Kurtosis', 'gyroY_Mean', 'gyroY_Median', 'gyroY_Min', 'gyroY_Max', 'gyroY_Std', 'gyroY_Mad', 'gyroY_Range', 'gyroY_Iqr', 'gyroY_Rms', 'gyroY_Peak_count', 'gyroY_Energy', 'gyroY_Entropy', 'gyroY_Skewness', 'gyroY_Kurtosis', 'gyroZ_Mean', 'gyroZ_Median', 'gyroZ_Min', 'gyroZ_Max', 'gyroZ_Std', 'gyroZ_Mad', 'gyroZ_Range', 'gyroZ_Iqr', 'gyroZ_Rms', 'gyroZ_Peak_count', 'gyroZ_Energy', 'gyroZ_Entropy', 'gyroZ_Skewness', 'gyroZ_Kurtosis', 'bodyAccJerkX_Mean', 'bodyAccJerkX_Median', 'bodyAccJerkX_Min', 'bodyAccJerkX_Max', 'bodyAccJerkX_Std', 'bodyAccJerkX_Mad', 'bodyAccJerkX_Range', 'bodyAccJerkX_Iqr', 'bodyAccJerkX_Rms', 'bodyAccJerkX_Peak_count', 'bodyAccJerkX_Energy', 'bodyAccJerkX_Entropy', 'bodyAccJerkX_Skewness', 'bodyAccJerkX_Kurtosis', 'bodyAccJerkY_Mean', 'bodyAccJerkY_Median', 'bodyAccJerkY_Min', 'bodyAccJerkY_Max', 'bodyAccJerkY_Std', 'bodyAccJerkY_Mad', 'bodyAccJerkY_Range', 'bodyAccJerkY_Iqr', 'bodyAccJerkY_Rms', 'bodyAccJerkY_Peak_count', 'bodyAccJerkY_Energy', 'bodyAccJerkY_Entropy', 'bodyAccJerkY_Skewness', 'bodyAccJerkY_Kurtosis', 'bodyAccJerkZ_Mean', 'bodyAccJerkZ_Median', 'bodyAccJerkZ_Min', 'bodyAccJerkZ_Max', 'bodyAccJerkZ_Std', 'bodyAccJerkZ_Mad', 'bodyAccJerkZ_Range', 'bodyAccJerkZ_Iqr', 'bodyAccJerkZ_Rms', 'bodyAccJerkZ_Peak_count', 'bodyAccJerkZ_Energy', 'bodyAccJerkZ_Entropy', 'bodyAccJerkZ_Skewness', 'bodyAccJerkZ_Kurtosis', 'gyroJerkX_Mean', 'gyroJerkX_Median', 'gyroJerkX_Min', 'gyroJerkX_Max', 'gyroJerkX_Std', 'gyroJerkX_Mad', 'gyroJerkX_Range', 'gyroJerkX_Iqr', 'gyroJerkX_Rms', 'gyroJerkX_Peak_count', 'gyroJerkX_Energy', 'gyroJerkX_Entropy', 'gyroJerkX_Skewness', 'gyroJerkX_Kurtosis', 'gyroJerkY_Mean', 'gyroJerkY_Median', 'gyroJerkY_Min', 'gyroJerkY_Max', 'gyroJerkY_Std', 'gyroJerkY_Mad', 'gyroJerkY_Range', 'gyroJerkY_Iqr', 'gyroJerkY_Rms', 'gyroJerkY_Peak_count', 'gyroJerkY_Energy', 'gyroJerkY_Entropy', 'gyroJerkY_Skewness', 'gyroJerkY_Kurtosis', 'gyroJerkZ_Mean', 'gyroJerkZ_Median', 'gyroJerkZ_Min', 'gyroJerkZ_Max', 'gyroJerkZ_Std', 'gyroJerkZ_Mad', 'gyroJerkZ_Range', 'gyroJerkZ_Iqr', 'gyroJerkZ_Rms', 'gyroJerkZ_Peak_count', 'gyroJerkZ_Energy', 'gyroJerkZ_Entropy', 'gyroJerkZ_Skewness', 'gyroJerkZ_Kurtosis', 'bodyAccMag_Mean', 'bodyAccMag_Median', 'bodyAccMag_Min', 'bodyAccMag_Max', 'bodyAccMag_Std', 'bodyAccMag_Mad', 'bodyAccMag_Range', 'bodyAccMag_Iqr', 'bodyAccMag_Rms', 'bodyAccMag_Peak_count', 'bodyAccMag_Energy', 'bodyAccMag_Entropy', 'bodyAccMag_Skewness', 'bodyAccMag_Kurtosis', 'bodyAccJerkMag_Mean', 'bodyAccJerkMag_Median', 'bodyAccJerkMag_Min', 'bodyAccJerkMag_Max', 'bodyAccJerkMag_Std', 'bodyAccJerkMag_Mad', 'bodyAccJerkMag_Range', 'bodyAccJerkMag_Iqr', 'bodyAccJerkMag_Rms', 'bodyAccJerkMag_Peak_count', 'bodyAccJerkMag_Energy', 'bodyAccJerkMag_Entropy', 'bodyAccJerkMag_Skewness', 'bodyAccJerkMag_Kurtosis', 'gravityAccMag_Mean', 'gravityAccMag_Median', 'gravityAccMag_Min', 'gravityAccMag_Max', 'gravityAccMag_Std', 'gravityAccMag_Mad', 'gravityAccMag_Range', 'gravityAccMag_Iqr', 'gravityAccMag_Rms', 'gravityAccMag_Peak_count', 'gravityAccMag_Energy', 'gravityAccMag_Entropy', 'gravityAccMag_Skewness', 'gravityAccMag_Kurtosis', 'gyroMag_Mean', 'gyroMag_Median', 'gyroMag_Min', 'gyroMag_Max', 'gyroMag_Std', 'gyroMag_Mad', 'gyroMag_Range', 'gyroMag_Iqr', 'gyroMag_Rms', 'gyroMag_Peak_count', 'gyroMag_Energy', 'gyroMag_Entropy', 'gyroMag_Skewness', 'gyroMag_Kurtosis', 'gyroJerkMag_Mean', 'gyroJerkMag_Median', 'gyroJerkMag_Min', 'gyroJerkMag_Max', 'gyroJerkMag_Std', 'gyroJerkMag_Mad', 'gyroJerkMag_Range', 'gyroJerkMag_Iqr', 'gyroJerkMag_Rms', 'gyroJerkMag_Peak_count', 'gyroJerkMag_Energy', 'gyroJerkMag_Entropy', 'gyroJerkMag_Skewness', 'gyroJerkMag_Kurtosis', 'bodyAcc_Sma', 'gravityAcc_Sma', 'gyro_Sma', 'bodyAccJerk_Sma', 'gyroJerk_Sma', 'activity']
+Model: OurModel(
+  (model): Sequential(
+    (0): Linear(in_features=285, out_features=768, bias=True)
+    (1): ReLU()
+    (2): BatchNorm1d(768, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Dropout(p=0.05, inplace=False)
+    (4): Linear(in_features=768, out_features=256, bias=True)
+    (5): ReLU()
+    (6): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (7): Dropout(p=0.05, inplace=False)
+    (8): Linear(in_features=256, out_features=128, bias=True)
+    (9): ReLU()
+    (10): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (11): Dropout(p=0.05, inplace=False)
+    (12): Linear(in_features=128, out_features=12, bias=True)
+    (13): ReLU()
+    (14): BatchNorm1d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (15): Dropout(p=0.05, inplace=False)
+    (16): Softmax(dim=1)
+  )
+)
+Loss Function: Cross Entropy Loss
+Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0001
+    maximize: False
+    weight_decay: 0
+)
+
+
+
+Results: Test Error: 
+ Accuracy: 92.2%, Avg loss: 1.708231 
+
+Timer: 224.28s
