@@ -9,4 +9,4 @@
 9 SIT_TO_LIE        
 10 LIE_TO_SIT        
 11 STAND_TO_LIE      
-12 LIE_TO_STAND      
+12 LIE_TO_STAND  
