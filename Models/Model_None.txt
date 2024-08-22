@@ -1,0 +1,52 @@
+Epochs: 20
+Feature Selection: None
+Feature Set: None
+Model: GRUNetwork(
+  (gru): GRU(285, 64, num_layers=2, batch_first=True, dropout=0.1, bidirectional=True)
+  (fc1): Linear(in_features=128, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=128, bias=True)
+  (fc3): Linear(in_features=128, out_features=64, bias=True)
+  (fc4): Linear(in_features=64, out_features=32, bias=True)
+  (fc5): Linear(in_features=32, out_features=12, bias=True)
+  (dropout): Dropout(p=0.1, inplace=False)
+  (relu): ReLU()
+  (leaky_relu): LeakyReLU(negative_slope=0.01)
+  (batch_norm1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (batch_norm2): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (batch_norm3): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (batch_norm4): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+)
+Loss Function: Cross Entropy Loss
+Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)
+
+
+
+Results: Test Error: 
+ Accuracy: 67.4%, Avg loss: 0.764670 
+
+Timer: 68.79s
+Confusion Matrix
+[[398 106   0   0   0   0   0   0   0   0   0   0]
+ [177 287   0   0   0   0   2   0   0   0   0   0]
+ [381  47   0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0 498  35   5   1   0   0   0   0   0]
+ [  0   0   0 195 418   0   2   0   0   0   0   0]
+ [  0   0   0   0   0 567   0   0   0   0   2   0]
+ [  0  13   0   0   3   0   9   0   0   0   0   0]
+ [  0   3   0   0   2   0   4   0   0   0   0   0]
+ [  0   5   0   0   2   1   4   0   0   5   9   0]
+ [  0   5   0   1   1   0   5   0   0  15   3   0]
+ [  0  17   0   0   0   0   5   0   1   4  14   0]
+ [  0   2   0   0   1   0   0   0   0  12   6   0]]

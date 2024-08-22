@@ -1,1 +1,4 @@
-data/
+RawData/
+Test/
+Train/
+NewGeneratedData/
