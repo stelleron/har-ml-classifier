@@ -9,10 +9,29 @@ Feature Set: Index(['gravityAccX_Max', 'gravityAccX_Std', 'gravityAccX_Range',
        'gyroJerkMag_Max', 'gyroJerkMag_Mad', 'gyroJerkMag_Iqr',
        'gyroJerkMag_Rms', 'gyroJerkMag_Energy', 'gyroJerk_Sma'],
       dtype='object')
-Model: LSTMModel(
-  (lstm): LSTM(30, 256, num_layers=2, batch_first=True)
-  (fc1): Linear(in_features=256, out_features=12, bias=True)
-  (softmax): Softmax(dim=1)
+Model: OurModel(
+  (model): Sequential(
+    (0): Linear(in_features=30, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Dropout(p=0.05, inplace=False)
+    (4): Linear(in_features=1024, out_features=512, bias=True)
+    (5): ReLU()
+    (6): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (7): Dropout(p=0.05, inplace=False)
+    (8): Linear(in_features=512, out_features=256, bias=True)
+    (9): ReLU()
+    (10): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (11): Dropout(p=0.05, inplace=False)
+    (12): Linear(in_features=256, out_features=128, bias=True)
+    (13): ReLU()
+    (14): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (15): Dropout(p=0.05, inplace=False)
+    (16): Linear(in_features=128, out_features=12, bias=True)
+    (17): ReLU()
+    (18): BatchNorm1d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (19): Softmax(dim=1)
+  )
 )
 Loss Function: Cross Entropy Loss
 Optimizer: Adam (
@@ -32,19 +51,19 @@ Parameter Group 0
 
 
 Results: Test Error: 
- Accuracy: 85.4%, Avg loss: 0.376430 
+ Accuracy: 85.2%, Avg loss: 1.801063 
 
-Timer: 95.2s
+Timer: 129.19s
 Confusion Matrix
-[[483  13   8   0   0   0   0   0   0   0   0   0]
- [ 65 366  34   0   0   0   1   0   0   0   0   0]
- [ 37  53 338   0   0   0   0   0   0   0   0   0]
- [  0   0   0 469  67   0   1   0   1   0   1   0]
- [  0   0   0  89 524   0   2   0   0   0   0   0]
- [  0   0   0   0   0 567   0   0   2   0   0   0]
- [  1  11   0   0   2   0   9   1   0   0   1   0]
- [  0   3   0   0   1   0   2   2   0   0   1   0]
- [  1   0   0   0   0   2   1   0  12   2   8   0]
- [  0   0   0   1   0   0   1   0   8   7   8   5]
- [ 12   1   2   0   0   1   0   0   9   0  14   2]
- [  1   0   0   0   0   0   0   0   7   3   5   5]]
+[[482  15   6   0   0   0   1   0   0   0   0   0]
+ [ 60 387  16   0   0   0   3   0   0   0   0   0]
+ [ 34  69 323   0   0   0   0   0   0   0   1   1]
+ [  0   0   0 426 106   0   1   0   0   0   6   0]
+ [  0   0   0  53 558   0   0   1   0   0   3   0]
+ [  0   0   0   0   0 566   0   0   2   1   0   0]
+ [  2   1   0   0   1   0  16   1   0   0   3   1]
+ [  0   0   0   0   1   0   6   0   0   0   2   0]
+ [  3   0   0   0   1   1   2   0   8   0  10   1]
+ [  0   0   0   1   0   0   3   0   3   8  12   3]
+ [ 17   3   0   0   0   0   2   0   8   1  10   0]
+ [  1   0   0   0   1   0   0   0   6   2   8   3]]
